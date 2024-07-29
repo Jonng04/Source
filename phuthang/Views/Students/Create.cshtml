@@ -1,0 +1,27 @@
+@model StudentTeacherManagement.Models.Student
+
+<h2>Add Students</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="StudentId">Student Code</label>
+        <input asp-for="StudentId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Name">Full Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Age">Age</label>
+        <input asp-for="Age" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ClassCode">Class Code</label>
+        <input asp-for="ClassCode" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary mt-5">Add Student</button>
+</form>

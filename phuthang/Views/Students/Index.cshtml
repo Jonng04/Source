@@ -1,0 +1,41 @@
+@model IEnumerable<StudentTeacherManagement.Models.Student>
+
+<h2>Students</h2>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Create New</a>
+</p>
+<div class="mt-4">
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover no-footer text-nowrap">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.StudentId)</th>
+                    <th>@Html.DisplayNameFor(model => model.Name)</th>
+                    <th>@Html.DisplayNameFor(model => model.Email)</th>
+                    <th>@Html.DisplayNameFor(model => model.Age)</th>
+                    <th>@Html.DisplayNameFor(model => model.ClassCode)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.StudentId)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Age)</td>
+                        <td>@Html.DisplayFor(modelItem => item.ClassCode)</td>
+                        <td>
+                            <a class="btn badge badge-soft-primary" asp-action="Edit"
+                                asp-route-id="@item.StudentId">Edit</a>
+                            <a class="btn badge badge-soft-danger" asp-action="Delete"
+                                asp-route-id="@item.StudentId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
