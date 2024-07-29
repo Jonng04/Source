@@ -1,4 +1,6 @@
-# Quản lý Học sinh - Student Management System
+# Student Management System
 
-## Giới thiệu
-Dự án này là một hệ thống quản lý học sinh được phát triển bằng C#. Nó giúp các trường học dễ dàng quản lý thông tin học sinh và giáo viên.
+## Introduction
+This project is a Student Management System developed in C#. It helps schools easily manage student and teacher information.
+## Contact Information
+For any questions or support, contact us at: info@phuthang.net
